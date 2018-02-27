@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.apache.org">
+<body>
+<wicket:panel>
+
+    <div wicket:id="pieChartPanel"></div>
+
+    <div wicket:id="allWinners">
+        <div class="winner">
+            <span wicket:id="surname"></span><wicket:container wicket:id="nameSeparator">,</wicket:container>
+            <span wicket:id="firstname"></span>
+            <p>
+                <label>
+                    <wicket:message key="gender"></wicket:message>
+                </label>
+                <span wicket:id="gender"></span>
+            </p>
+            <p>
+
+                <label>
+                    <wicket:message key="birthPlace"></wicket:message>
+                </label>
+                <span wicket:id="bornCity"></span>, <span wicket:id="bornCountry"></span>, <span
+                    wicket:id="born"></span>
+            </p>
+            <p>
+                <label>
+                    <wicket:message key="deathPlace"></wicket:message>
+                </label>
+                <span wicket:id="diedCity"></span>, <span wicket:id="diedCountry"></span>, <span
+                    wicket:id="died"></span>
+            </p>
+            <div wicket:id="prizes"></div>
+        </div>
+    </div>
+</wicket:panel>
+</body>
+</html>
